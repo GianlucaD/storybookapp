@@ -10,15 +10,15 @@ export default {
   decorators: [withKnobs, withA11y]
 };
 
-export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
+export const Text = () => <Button onClick={action('clicked on text')}>Hello Button</Button>;
 
 export const Emoji = () => (
-  <Button onClick={action('clicked')}>
+  <Button onClick={action('clicked on Emoji')}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
   </Button>
 );
 export const withknobs = () => (
-  <Button onClick={action('clicked')}>{text("name", "defaultwert")}</Button>
+  <Button onClick={action('clicked')}>{text("Bitte Text eingeben", "hier Text")}</Button>
 );
