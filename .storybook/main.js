@@ -1,28 +1,16 @@
 module.exports = {
-  stories: ['../src/**/*.stories.js'],
-  addons: [
-    '@storybook/preset-create-react-app',
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-actions/register',
-    {
-      name: '@storybook/addon-storysource',
-      options: {
-        configureJSX: true,
-      },
-    },
-    '@storybook/addon-viewport/register',
-    '@storybook/addon-backgrounds/register',
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-a11y/register',
-    {
-      name : '@storybook/addon-docs',
-      options: {
-        configureJSX: true,
-        babelOptions: {},
-        sourceLoaderOptions: null,
-      },
-    }
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  
-};
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/preset-create-react-app"
+  ],
+  "framework": "@storybook/react",
+  "core": {
+    "builder": "@storybook/builder-webpack5"
+  }
+}
