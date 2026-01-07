@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "storybook dev -p 9009",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,18 +34,19 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.3.17",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-backgrounds": "^5.3.17",
-    "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-docs": "^5.3.17",
-    "@storybook/addon-knobs": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addon-storysource": "^5.3.17",
-    "@storybook/addon-viewport": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/preset-create-react-app": "^2.1.0",
-    "@storybook/react": "^5.3.17"
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-actions": "^9.0.8",
+    "@storybook/addon-backgrounds": "^9.0.8",
+    "@storybook/addon-console": "^3.0.0",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-links": "^10.1.11",
+    "@storybook/addon-viewport": "^9.0.8",
+    "@storybook/manager-api": "8.6.14",
+    "@storybook/react": "^10.1.11",
+    "@storybook/theming": "8.6.14",
+    "@testing-library/dom": "^10.4.1",
+    "@types/react": "^19.2.7",
+    "storybook": "^10.1.11"
   },
   "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8"
 }
