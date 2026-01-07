@@ -443,24 +443,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helpers@npm:^7.28.4":
+"@babel/helpers@npm:^7.28.4, @babel/helpers@npm:^7.9.0":
   version: 7.28.4
   resolution: "@babel/helpers@npm:7.28.4"
   dependencies:
     "@babel/template": "npm:^7.27.2"
     "@babel/types": "npm:^7.28.4"
   checksum: 10c0/aaa5fb8098926dfed5f223adf2c5e4c7fbba4b911b73dfec2d7d3083f8ba694d201a206db673da2d9b3ae8c01793e795767654558c450c8c14b4c2175b4fcb44
-  languageName: node
-  linkType: hard
-
-"@babel/helpers@npm:^7.9.0":
-  version: 7.9.0
-  resolution: "@babel/helpers@npm:7.9.0"
-  dependencies:
-    "@babel/template": "npm:^7.8.3"
-    "@babel/traverse": "npm:^7.9.0"
-    "@babel/types": "npm:^7.9.0"
-  checksum: 10c0/0ed6ceeeb480fe276b388382341477715db898e5811095c880b08aa051dd2c2ae347154e4c03feba4917dda1dd3386de7c88dfdda453e0e8946977041c2bc0f2
   languageName: node
   linkType: hard
 
