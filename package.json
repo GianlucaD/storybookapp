@@ -3,23 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:storybook/recommended"
+    ]
   },
   "browserslist": {
     "production": [
@@ -33,19 +37,16 @@
       "last 1 safari version"
     ]
   },
+  "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8",
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.3.17",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-backgrounds": "^5.3.17",
-    "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-docs": "^5.3.17",
-    "@storybook/addon-knobs": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addon-storysource": "^5.3.17",
-    "@storybook/addon-viewport": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/preset-create-react-app": "^2.1.0",
-    "@storybook/react": "^5.3.17"
-  },
-  "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8"
+    "@storybook/addon-a11y": "^10.2.0",
+    "@storybook/addon-docs": "^10.2.0",
+    "@storybook/addon-onboarding": "^10.2.0",
+    "@storybook/preset-create-react-app": "^10.2.0",
+    "@storybook/react-webpack5": "^10.2.0",
+    "eslint-plugin-storybook": "^10.2.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^10.2.0",
+    "webpack": "^5.104.1"
+  }
 }
